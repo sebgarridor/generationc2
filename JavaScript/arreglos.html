@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+<body>
+    <script>
+
+        //Arreglos
+        //TODOS los arreglos comienzan en la posición cero (0)
+        //arreglo = tamaño definido
+        //lista = tamaño dinámico
+
+        var vocales = ["u","i","e","o","a"];
+        //tiene 5 elementos, el último está en la posición 4
+        //el primero en la posición 0
+        console.log(vocales);
+        //lenght -> cantidad de elementos o tamaño del arreglo
+        console.log(vocales[0],vocales[1],vocales[2],vocales[3],vocales[4]);
+        console.log(vocales[5]);
+        console.log(vocales[2*2]);
+        
+        //re escritura de un dato  en una posición específica
+        vocales[1]= "y";
+        console.log(vocales[0],vocales[1],vocales[2],vocales[3],vocales[4]);
+
+        //push arregla/agrega un dato al final
+        vocales.push("i");
+        console.log(vocales);
+
+        //pop, elimina el último elemento del array
+
+        vocales.pop();
+        console.log(vocales);
+
+        vocales.pop();
+        vocales.pop();
+        vocales.pop();
+        vocales.pop();
+        vocales.pop();
+        console.log(vocales);
+
+        var arreglo1 = []; // arreglo vacío
+        //el tamaño es CERO, no nulo
+        console.log(arreglo1.length);
+        arreglo1.push(1);
+        arreglo1.push(8);
+        var ultimo = arreglo1.pop();
+        console.log(ultimo);
+
+
+
+
+
+        /*reemplazando el array por un string
+        vocales = "aeiou";
+        console.log(vocales);
+        //todas los strings son en esencia un array
+        console.log("string aeiou", vocales[3]);
+
+        vocales.push()*/
+
+
+
+    </script>
+</body>
+</html>
