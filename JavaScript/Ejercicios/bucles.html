@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+</head>
+<body>
+    <script>
+        //bucle FOR
+        for(let i = 0; i < 10; i++){
+            console.log("El valor de i es ", i);
+
+        }
+
+        //respuesta: el valor de i es 0
+        //respuesta: el valor de i es 1
+        //respuesta: el valor de i es 2
+        //...
+
+        console.clear();
+
+        var numeros_pares=[2,4,6,8,10];
+        numeros_pares[0];
+        console.log("El arreglo es", numeros_pares);
+
+        /*numeros_pares [numeros_pares.length-1];
+        numeros_pares [5-1];
+        numeros_pares [4];*/
+
+        for (let i = 0; i < numeros_pares.length; i++) {
+            console.log("La posición es", i);
+            console.log("El elemento es", numeros_pares[i]);
+            console.log("");
+            
+        }
+        
+        var valor = 0
+        for (let i = 0; i < numeros_pares.length; i++) {
+            valor = numeros_pares[i];
+            console.log("La posición: ", i, ", tiene el elemento: ", valor);
+            
+        }
+        console.log("element", valor);
+
+        var suma_pares = 0; //2
+        //variables acumuladoras
+        // variable = variable + algo;
+        for(let i = 0; i < numeros_pares.length;i++){
+            suma_pares = suma_pares + numeros_pares[i];
+            //suma_pares = 2 + numeros_pares [1];
+            //suma_pares = 2 + 4;
+            //suma_pares = 6;
+            console.log("Suma parcial", suma_pares);
+        }
+        console.log("");
+        console.log("Suma total", suma_pares);
+
+
+
+    
+
+
+
+
+    </script>
+    
+</body>
+</html>
