@@ -9,7 +9,37 @@
 <body>
     <script>
 
-        //WHILE
+        //WHILE (bucle)
+        // ciclo infinito que se repite hasta que se cumpla una condición, mientras sea verdadera la condición se repetirá.
+
+        /*while(condicion){
+
+        }*/
+
+        var contador = 0 //definiendo variable
+        while (contador <= 5){ //primero se valida/comprueba si esto es true, si lo es entra dentro del while
+            console.log("Somos bacanes Team Shrek!!"); //aquí valida si es correcto, si no lo es, vuelve al principio.
+            contador++; //sumar uno a la variable contador, pero se sumará uno cada vez que entré.
+            
+        }
+
+        var termino = true //variable booleana (true/false)
+        var contador = 10;
+        // el término será cuando contador = 200
+        while(termino){ //si digo que la variable es false, nunca entrará al bucle. ya que sólo entran variables true al bucle while.
+            console.log("Contador", contador);
+            contador = contador + 10;
+            
+            if(contador==200){ //si esto ocurre, crearemos una condición para poner termino al bucle siempre y cuando contador = 200
+                termino = false;
+                console.log("Contador", contador);
+
+            }
+
+        }
+
+        
+
     </script>
     
 </body>
