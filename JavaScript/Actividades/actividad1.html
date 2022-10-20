@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    1. Obtén del 1 al 255: Escribe un programa que devuelve un array con 
+    todos los números del 1 al 255. */
+
+
+    var numero = [];
+    for(let i = 1; i < 256;i++){
+        numero.push(i);
+        
+    }
+    console.log(numero);
+
+    console.clear();
+
+    /*2. Consigue pares hasta 1000: Escribe un programa que entregue la suma 
+    de todos los números pares del 1 al 1000 - Puedes usar un operador de
+    módulo para este ejercicio. */
+
+    console.log("*********** Ejercicio 2 *************");
+    var numeros_pares = [];
+    var sumPares = 0;
+    for (let i = 0; i < 501; i++) {
+            numeros_pares.push(i*2);
+            sumPares = sumPares + numeros_pares[i];
+        }
+	console.log("Numero:", numeros_pares);
+    console.log("La suma es igual a ", sumPares);
+
+    /*3. Suma impares hasta 5000: Escribe un programa que devuelva la suma 
+    de todos los números impares entre 1 y 5000 (ej: 1+3+5+...+4997+4999).*/
+
+    
+
+    console.log("*********** Ejercicio 3 *************");
+    var numeros_impares = [];
+    var sumImpares = 0;
+    for (let i = 0; i < 2500; i++) {
+            numeros_impares.push((i*2)+1);
+            sumImpares = sumImpares + numeros_impares[i];
+        }
+	console.log("Numero:", numeros_impares);
+    console.log("La suma es igual a ", sumImpares);
+
+
+    /*4. Itera un array: Escribe un programa que devuelva la suma de 
+    todos los valores{} dentro de un array (ej:  [1,2,5] retorna 8. 
+    [-5,2,5,12] retorna 14). */
+    
+    console.log("*********** Ejercicio 4 *************");
+
+    var arreglo = [5, 4, 20, 12, 5];
+    var sumValores = 0;
+
+    for(let i = 0; i < arreglo.length; i++){
+        sumValores += arreglo[i];
+    }
+    console.log(sumValores);
+
+    /*5. Encuentra el mayor (max): Dado un array con múltiples valores, 
+    escribe un programa que devuelva el número mayor (ej: para [-3,3,5,7]
+    el número mayor (max) es 7). */
+
+    var numeros = [22,44,66,3];
+	var numeroMayor = 0;
+	for (let i=0; i<numeros.length; i++){
+        if(numeros[i]> numeroMayor){
+        numeroMayor = numeros[i];
+      }
+      
+    }
+		console.log(numeroMayor);
+
+
+    
+
+
+    /* 6. Encuentra el promedio (avg): Dado un array con múltiples valores, 
+    escribe un programa que devuelva el promedio de los valores 
+    (ej: para [1,3,5,7,20] el promedio es 7.2) */
+
+    console.log("*** Ejercicio 6****");
+
+    var numeros = [29, 25, 10, 3, 50];
+    var total = 0;
+    for (let i = 0; i < numeros.length; i++) {
+        total += numeros[i];
+        
+    }
+
+    var avg = total / numeros.length
+    console.log(avg);
+
+
+    /* 7. Array de impares: Escribe un programa que devuelva un array de todos 
+    los números impares entre 1 y 50 (ej: [1,3,5, …, 47,49]).
+    Pista: Usa el método ‘push’. */
+    console.log("******Ejercicio 7*******");
+    var impa_r = [];
+    for(let i =0; i<50;i++)
+    {
+    impa_r.push((i * 2)+1 );
+    }
+console.log(impa_r)
+    
+
+
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+    
+
+    </script>
+</body>
+</html>
