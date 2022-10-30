@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio loops</title>
+</head>
+<body>
+    <script>
+
+        /* - Mostrar todos los números de 1 a n 
+        aumentando de 1 en 1 donde n lo ingresa el usuario en un prompt. */
+        var numero = parseInt(prompt("Ingresa un numero",0));
+        var numerosde1en1 = [];
+        for(let i = 1;i <= numero;i++)
+        {
+           numerosde1en1.push(i); //push->parentesis posicion->corchetes
+        }
+        console.log("El numero es",numero);
+        console.log(numerosde1en1);
+
+        console.clear();
+
+        /* - Mostrar todos los números de 1 a N aumentando de 2 en 2 donde n lo ingresa el usuario en un prompt. */
+
+        var numero = parseInt(prompt("Ingresa un numero",0));
+        var numerosde2en2 = [];
+        for (let i = 1; i <= numero / 2; i++){
+            numerosde2en2.push(i * 2);
+        }
+
+        console.log(numerosde2en2);
+
+        console.clear();
+
+        /* - Mostrar todos los números de N a 1 disminuyendo de 1 en 1 donde n lo ingresa el usuario en un prompt. */
+        var numero = parseInt(prompt("Ingresa un numero",0));
+        var numerodena1= [];
+        for (i = numero; i > 0; i--){
+            numerodena1.push(i);
+        }
+
+        console.log(numerodena1);
+
+        /* - Escribir utilizando console.log la tabla del 9 hasta 9x10. */ 
+
+        console.clear();
+
+        for(let i = 1; i < 11; i++){
+            console.log("9x" + i, "=", [i*9]);
+        }
+
+        /* - Pedir al usuario que ingrese un número en un prompt, hacer la suma de todos los dígitos, validar que el número ingresado no contenga letras. */ 
+        console.clear();
+
+        var numero = prompt("Ingrese un numero",0);
+        var total = 0;
+        for(let i = 0;i <= numero ;i++)
+        {
+        total = total + i; 
+        }
+        console.log("Numero ingresado",numero);
+        console.log("La suma de sus digitos es",total);
+
+        /*Determinar si un número ingresado por el usuario en un loop es primo o no, validar que el 
+        número ingresado sea mayor o igual a dos.*/
+        
+
+        var numero = prompt("Ingrese un numero",0);
+        if (numero < 2 ) {
+            console.log("El número ingresado debe ser mayor a 2");
+            
+        } else {
+            for (let i = 2; i < numero; i++) {
+                if(numero % 2 == 1)
+                console.log("El número es primo");
+                
+            }
+        }
+
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
