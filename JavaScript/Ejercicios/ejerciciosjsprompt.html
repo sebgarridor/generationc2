@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios 2410</title>
+</head>
+<body>
+    <script>
+        /*Escribir un programa que muestre un prompt donde el usuario ingresa un número, 
+        luego muestra otro prompt pidiendo otro número, finalmente el programa muestra 
+        una alerta con el resultado de la suma. */
+
+        console.log("Ejercicio 1");
+
+        var numeroIngresado = parseInt(prompt("Ingresa un número: ", 0));
+        var numeroIngresadoDos = parseInt(prompt("Ingresa otro número", 0));
+
+        var sumaValores = numeroIngresado + numeroIngresadoDos;
+
+        window.alert(sumaValores);
+        console.log(sumaValores);
+
+        /* Crear un programa donde el usuario ingrese en un prompt la temperatura en Celcius
+        y el programa muestre en una alerta la temperatura en Fahrenheit. */
+
+        console.log("Ejercicio 2");
+
+        var valorCelsius = parseInt(prompt("Ingrese una temperatura en Celsius", 0));
+        var valorFahrenheit = (valorCelsius * 1.8) + 32;
+
+        window.alert(valorFahrenheit);
+        console.log(valorFahrenheit);
+
+        /* Pedir un número a un usuario a través de un prompt y luego dividirlo por 10, ejemplo: 5 / 10  igual 0.5*/
+        console.log("Ejercicio 3");
+        var numeroSolicitado = parseInt(prompt("Ingrese un número: ", 0));
+        var numeroTotal = numeroSolicitado / 10;
+
+        console.log(numeroTotal);
+
+        /*Si a = [1,2,3] crear un script que determine de muestre un alert del tipo de dato de a. */
+        console.log("Ejercicio 4 ");
+        var variableA = [1, 2, 3];
+        window.alert(typeof(variableA));
+
+        /* - Crear un programa que determine si un número introducido en un Prompt
+        es par o no, la respuesta será mostrada en una alerta. */
+        console.log("Ejercicio 5");
+
+        var numeroIntroducido = parseInt(prompt("Ingrese un valor", 0));
+        if(numeroIntroducido % 2 == 0){
+            console.log("El número es par");
+            
+        }else{
+            console.log("El número es impar");
+        
+        }
+
+        /* - Crear un programa que determine si un número introducido
+        en un Prompt es divisible por 5 o no, mostrar el resultado con console.log */
+
+        console.log("Ejercicio 6");
+        var numeroIng = parseInt(prompt("Ingrese un valor", 0));
+        if(numeroIng%5== 0){
+            console.log("El número es divisible por 5");
+
+        }else{
+            console.log("El número no es divisible por 5");
+        }
+
+        /* - Crear un programa que determine si un número introducido
+        en un popup es divisible por 11 y 5 o no, mostrar el resultado con console.log */
+        console.log("Ejercicio 7");
+
+        var numIngresado = parseInt(prompt("Ingrese un número"));
+        if(numIngresado%11== 0 && numIngresado%5==0){
+            console.log("El número es divisible por 11 y por 5");
+        }
+
+        /* - Crear un programa  que le pida al usuario dos números en un Prompt
+        y luego muestre en un alerta e número mayor. */
+
+        console.clear();
+
+        var numIng1 = parseInt(prompt("Ingrese un número"));
+        var numIng2 = parseInt(prompt("Ingrese otro número"));
+
+        if (numIng1 > numIng2) {
+            console.log("El número mayor es: "+ numIng1);
+            
+        } else {
+            console.log("El número mayor es: " + numIng2);
+            
+        }
+
+        //LOOPS
+
+        //
+        
+
+            
+
+
+
+
+        
+
+
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>
