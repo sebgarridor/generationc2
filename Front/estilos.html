@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos CSS</title>
+    <style>
+
+        /*3 formas de asignar estilos */
+
+        /*1. A través del elemento (etiqueta) */
+        /*estilo a TODOS los elementos */
+        p{
+            color:mediumorchid;
+            background-color:beige
+        }
+
+        div{
+            color: red;
+            background-color: antiquewhite;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        /*2. a través de clases */
+        /*estilo a 1 o más elementos */
+        .parrafo1 {
+            color:rgb(157, 254, 11) /*!important*/;
+            background-color: black;
+
+        }
+
+        /*3. a través del id #*/
+        /*el estilo solo se aplica a 1 elemento */
+        #parrafo4{
+            color:aqua;
+            background-color: magenta;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Párrafo 1</p>
+        <p class="parrafo1">Párrafo 2</p>
+        <p class="parrafo1">Párrafo 3</p>
+        <p class="parrafo1" id="parrafo4">Párrafo 4</p>
+        <a href="www.sii.cl">visite sii</a>
+    </div>
+    
+</body>
+</html>
