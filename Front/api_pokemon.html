@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <script>
+
+        //bloque de jquery
+        $(document).ready(function () {
+
+            for (let i = 1; i <= 151; i++) {
+                $('.container-fluid').append('<img id="' + i + '" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + i + '.png" alt="pokemon">');
+            }
+
+            //AJAX
+
+            //$.get(URL,FUNCION, FORMATO JSON)
+
+
+            $('img').click(function () {
+                var id = $(this).attr("id"); //this habla de un objeto en específico
+                console.log(id);
+
+
+                var obtenerPoke= $.get('https://pokeapi.co/api/v2/pokemon/' + id, //no es necesario definir el id ya que al clickear una imagen capturamos el ID de dicho pokemon.
+                    function (respuesta) {
+                        alert("El pokemon n°" + respuesta.id + " se llama " + respuesta.name + ", pesa un total de " + respuesta.weight + "kg, además mide un total de " + respuesta.height + " metros. Sus habilidades son " + respuesta.abilities[0].ability.name+ " y "+ respuesta.abilities[1].ability.name);
+                        console.log(respuesta.id);
+                        console.log("El pokemon se llama" + respuesta.name);
+                        console.log("El pokemon mide" + respuesta.height);
+                        console.log("El pokemon pesa" + respuesta.weight);
+                        console.log("Las habilidades del pokemon son " + respuesta.abilities[0].ability.name+ " y "+ respuesta.abilities[1].ability.name );
+                    },
+                    'json');
+
+
+            });
+
+
+
+
+
+            //cierre jquery    
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
